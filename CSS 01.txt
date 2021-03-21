@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        .verde{
+            color: lightgreen;
+        }
+
+        #segundaLinha{
+            text-align: center;
+            margin: 20px;
+        }
+        .terceiraLinha{
+            background-color: white;
+            color: black;
+            text-decoration: line-through;
+        }
+        .textoADireita{
+            text-align: right;
+        }
+        .espacoExtra{
+            margin: 10px;
+        }
+        .azul{
+            background-color: blue;
+            color: white;
+        }
+        .vermelho{
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    Um parágrafo simples (todos utilizam fonte 10pt sem <span class="verde">serifa</span>)
+    <div class="sombra"><i>Um parágrafo itálico e centralizado</i></div>
+    <div class="terceiraLinha textoADireita espacoExtra">E <span class="azul">por</span> fim, alinhado à <span class="vermelho">direita</span>!</div>
+</body>
+</html>
