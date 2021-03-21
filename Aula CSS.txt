@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*CSS*/
+
+        /*Seletores*/
+        
+        /*Seletor Tag*/
+        h1{
+            color: red;
+        }
+        div{
+            border: 3px dotted blue;
+            border-radius: 20px;
+        }
+        body{
+            border: 3px dotted red;
+            padding: 0px;
+            margin: 0px;
+            background-color: burlywood;
+        }
+
+        /*Seletor ID (#)*/
+        #t{
+            color: blue; 
+            background-color: yellow;
+            display: inline-flex;
+        }
+        #ti{
+            color: blanchedalmond;
+            display: inline-flex;
+        }
+        #tu{
+            color: gray;
+            background-color: greenyellow;
+        }
+        /*Seletor classe (.)*/
+        .rosa{
+            color: pink;
+        }
+        .fundoAzul{
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+            border-radius: 10px;
+            padding: 10px;
+            margin: 50px;
+        }
+
+        .padding{
+            padding: 10px;
+        }
+        .margin{
+            margin: 30px;
+        }
+
+        .sombra{
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);/*chrome*/
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);/*mozila*/
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);/*Geral*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo CSS</h1>
+    <h1 id="t"><div id="ti">Ti</div><div id="tu">tu</div>lo 1 para Azul</h1>
+    <h1 id="t2" class="rosa">Titulo 2</h1>
+    <h1 id="t3" class="rosa fundoAzul sombra">Titulo 3</h1>
+    <div>
+        <div class="margin padding sombra">Texto na Div</div>
+    </div>
+</body>
+</html>

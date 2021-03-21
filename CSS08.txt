@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 10pt;
+        }
+        .etapa01{
+            width: 200pt;
+            background-color: #00AAFF;
+            border: 1px solid black;
+        }
+
+        .etapa01 div{
+            border: 1px solid black;
+            box-sizing: border-box;
+
+        }
+
+        .etapa02{
+            width: 200pt;
+            height: 200pt;
+            background-color: #00AAFF;
+            border: 1px solid black;
+        }
+
+        .etapa02 div{
+            border: 1px solid black;
+        }
+
+        .etapa03{
+            width: 200pt;
+            height: 100pt;
+            background-color: #00AAFF;
+            border: 1px solid black;
+        }
+
+        .etapa03 div{
+            border: 1px solid black;
+            padding: 0px;
+        }
+
+        
+        .etapa04{
+            width: 200pt;
+            height: 100pt;
+            background-color: #00AAFF;
+            border: 1px solid black;
+            overflow:hidden;
+        }
+
+        .etapa04 div{
+            border: 1px solid black;
+            padding: 0px;
+        }
+
+        .etapa05{
+            width: 200pt;
+            height: 100pt;
+            background-color: #00AAFF;
+            border: 1px solid black;
+            overflow: auto;
+        }
+
+        .etapa05 div{
+            border: 1px solid black;
+            padding: 0px;
+        }
+
+        .azul{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    * As fontes são todoas 10pt sem serifa. os div utilizam box-sizing com o valor border-box. <br/> <br/>
+    Etapa1: Um div largura de 200pt. sem altura especificada, espaçamento interno de 0px e cinco outros div dentro.
+
+    <div class="etapa01">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+    </div><br/>
+Etapa2: Um div 200pt x 200pt, espaçamento interno de 0px e cinco outros div dentro<br/>
+    <div class="etapa02">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+    </div>
+Etapa 3: Um div com 200pt x 100pt, espaçamento interno de 0px e dez outros div dentro.
+    <div class="etapa03">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+        <div>Item 6</div>
+        <div>Item 7</div>
+        <div>Item 8</div>
+        <div>Item 9</div>
+        <div>Item 10</div>
+    </div><br>
+    <span class="azul">* repare que alguns items excederam os limites do div, e a aparencia final não ficou legal...</span><br>
+    <br><br><br>
+    Etapa 4: um div com 200pt x 100pt, espaçamento interno de 0px, <span class="azul">propriedade overflow diferente da original</span> e dez outros div dentro
+
+    <div class="etapa04">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+        <div>Item 6</div>
+        <div>Item 7</div>
+        <div>Item 8</div>
+        <div>Item 9</div>
+        <div>Item 10</div>
+    </div>
+
+    <br>
+    <span class="azul">* repare que os itens excedentes desapareceram...</span><br>
+    <br>
+    Etapa final: um div com 200pt x 100pt, espaçamento interno de 0px, <span class="azul">propriedade overflow alterada</span> e dez outros div dentro
+
+    <div class="etapa05">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+        <div>Item 6</div>
+        <div>Item 7</div>
+        <div>Item 8</div>
+        <div>Item 9</div>
+        <div>Item 10</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font-size: 10pt;
+        }
+
+        .fundo-cinza{
+            background-color: #9A9A9C;
+        }
+        .fundo-branco{
+            background-color: white;
+        }
+        .borda-azul{
+            border: 1px solid blue;
+        }
+        .borda-vermelha{
+            border: 1px solid red;
+        }
+
+        /*cima*/
+        .v-c{
+            vertical-align: super;
+        }
+        /*meio*/
+        .v-m{
+            vertical-align: middle;
+        }
+        /*baixo*/
+        .v-b{
+            vertical-align: bottom;
+        }
+
+        /*Alinhado a esquerda*/
+        .h-e{
+            text-align: left;
+        }
+        /*Alinhado a centro*/
+        .h-c{
+            text-align: center;
+        }
+        /*Alinhado a direita*/
+        .h-d{
+            text-align: right ;
+        }
+        .collapse{
+            border-collapse: collapse;
+        }
+
+        .spacing{
+            border-collapse: separate;
+            border-spacing: 4pt;
+        }
+
+        td{
+            width: 90pt;
+            height: 30pt;
+            color: black;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    Uma tabela simples onde cada linha tem 90pt de largura e 30pt de altura (utiliza fonte 10pt sem serifa) <br/>
+    <br/>
+    <table class="borda-azul collapse" >
+        <tr class="fundo-cinza">
+            <td class="v-c h-e">L1 C1</td>
+            <td class="v-c h-c">L1 C2</td>
+            <td class="v-c h-d">L1 C3</td>
+        </tr>
+        <tr class="fundo-branco">
+            <td class="v-m h-e">L2 C1</td>
+            <td class="v-m h-c">L2 C2</td>
+            <td class="v-m h-d">L2 C3</td>
+        </tr>
+        <tr class="fundo-cinza">
+            <td class="v-b h-e">L3 C1</td>
+            <td class="v-b h-c">L3 C2</td>
+            <td class="v-b h-d">L3 C3</td>
+        </tr>
+    </table>
+    <br/>
+    Parecida com a tabela acima, mas com duas diferençcas, espaçamento de 4pt entre cada célula e uma borda externa<br/>
+    <br/>
+    <table class="borda-vermelha fundo-cinza spacing" >
+        <tr class="fundo-cinza">
+            <td class="v-c h-e">L1 C1</td>
+            <td class="v-c h-c">L1 C2</td>
+            <td class="v-c h-d">L1 C3</td>
+        </tr>
+        <tr class="fundo-branco">
+            <td class="v-m h-e">L2 C1</td>
+            <td class="v-m h-c">L2 C2</td>
+            <td class="v-m h-d">L2 C3</td>
+        </tr>
+        <tr class="fundo-cinza">
+            <td class="v-b h-e">L3 C1</td>
+            <td class="v-b h-c">L3 C2</td>
+            <td class="v-b h-d">L3 C3</td>
+        </tr>
+    </table>
+    <br/>
+    * Dica: dê uma olhada nas pripriedades border-collpse, border-spacing e vertical-align...
+</body>
+</html>
